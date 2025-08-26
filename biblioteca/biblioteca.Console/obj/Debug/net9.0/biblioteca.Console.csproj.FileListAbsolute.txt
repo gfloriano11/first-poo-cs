@@ -1,0 +1,14 @@
+C:\Users\jdflo\Gustavo\catolica\engenharia_software\2_semestre\poo\aula4\biblioteca\biblioteca.Console\bin\Debug\net9.0\biblioteca.Console.exe
+C:\Users\jdflo\Gustavo\catolica\engenharia_software\2_semestre\poo\aula4\biblioteca\biblioteca.Console\bin\Debug\net9.0\biblioteca.Console.deps.json
+C:\Users\jdflo\Gustavo\catolica\engenharia_software\2_semestre\poo\aula4\biblioteca\biblioteca.Console\bin\Debug\net9.0\biblioteca.Console.runtimeconfig.json
+C:\Users\jdflo\Gustavo\catolica\engenharia_software\2_semestre\poo\aula4\biblioteca\biblioteca.Console\bin\Debug\net9.0\biblioteca.Console.dll
+C:\Users\jdflo\Gustavo\catolica\engenharia_software\2_semestre\poo\aula4\biblioteca\biblioteca.Console\bin\Debug\net9.0\biblioteca.Console.pdb
+C:\Users\jdflo\Gustavo\catolica\engenharia_software\2_semestre\poo\aula4\biblioteca\biblioteca.Console\obj\Debug\net9.0\biblioteca.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jdflo\Gustavo\catolica\engenharia_software\2_semestre\poo\aula4\biblioteca\biblioteca.Console\obj\Debug\net9.0\biblioteca.Console.AssemblyInfoInputs.cache
+C:\Users\jdflo\Gustavo\catolica\engenharia_software\2_semestre\poo\aula4\biblioteca\biblioteca.Console\obj\Debug\net9.0\biblioteca.Console.AssemblyInfo.cs
+C:\Users\jdflo\Gustavo\catolica\engenharia_software\2_semestre\poo\aula4\biblioteca\biblioteca.Console\obj\Debug\net9.0\biblioteca.Console.csproj.CoreCompileInputs.cache
+C:\Users\jdflo\Gustavo\catolica\engenharia_software\2_semestre\poo\aula4\biblioteca\biblioteca.Console\obj\Debug\net9.0\biblioteca.Console.dll
+C:\Users\jdflo\Gustavo\catolica\engenharia_software\2_semestre\poo\aula4\biblioteca\biblioteca.Console\obj\Debug\net9.0\refint\biblioteca.Console.dll
+C:\Users\jdflo\Gustavo\catolica\engenharia_software\2_semestre\poo\aula4\biblioteca\biblioteca.Console\obj\Debug\net9.0\biblioteca.Console.pdb
+C:\Users\jdflo\Gustavo\catolica\engenharia_software\2_semestre\poo\aula4\biblioteca\biblioteca.Console\obj\Debug\net9.0\biblioteca.Console.genruntimeconfig.cache
+C:\Users\jdflo\Gustavo\catolica\engenharia_software\2_semestre\poo\aula4\biblioteca\biblioteca.Console\obj\Debug\net9.0\ref\biblioteca.Console.dll
