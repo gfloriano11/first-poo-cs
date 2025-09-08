@@ -9,13 +9,22 @@ public class Livro
 
 
     // métodos
-    public Livro(string cod, string tit, string aut, int ano, int pag)
+    public Livro(int id, string cod, string tit, string aut, int ano, int pag)
     {
         isbn = cod;
         titulo = tit;
         autor = aut;
         anoPublicacao = ano;
         paginas = pag;
+    }
+
+    public Livro()
+    {
+        this.isbn = "";
+        this.titulo = "";
+        this.autor = "";
+        this.anoPublicacao = 0;
+        this.paginas = 0;
     }
 
 
