@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Gustavo Floriano\\.nuget\\packages\\": {}
+    "C:\\Users\\jdflo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gustavo Floriano\\OneDrive\\Documentos\\catolica\\2_semestre\\poo\\aula4\\first-poo-cs\\biblioteca\\biblioteca.Console\\biblioteca.Console.csproj",
+      "projectUniqueName": "C:\\Users\\jdflo\\Gustavo\\catolica\\engenharia_software\\2_semestre\\poo\\aula5\\first-poo-cs\\biblioteca\\biblioteca.Console\\biblioteca.Console.csproj",
       "projectName": "biblioteca.Console",
-      "projectPath": "C:\\Users\\Gustavo Floriano\\OneDrive\\Documentos\\catolica\\2_semestre\\poo\\aula4\\first-poo-cs\\biblioteca\\biblioteca.Console\\biblioteca.Console.csproj",
-      "packagesPath": "C:\\Users\\Gustavo Floriano\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gustavo Floriano\\OneDrive\\Documentos\\catolica\\2_semestre\\poo\\aula4\\first-poo-cs\\biblioteca\\biblioteca.Console\\obj\\",
+      "projectPath": "C:\\Users\\jdflo\\Gustavo\\catolica\\engenharia_software\\2_semestre\\poo\\aula5\\first-poo-cs\\biblioteca\\biblioteca.Console\\biblioteca.Console.csproj",
+      "packagesPath": "C:\\Users\\jdflo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jdflo\\Gustavo\\catolica\\engenharia_software\\2_semestre\\poo\\aula5\\first-poo-cs\\biblioteca\\biblioteca.Console\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Gustavo Floriano\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\jdflo\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
