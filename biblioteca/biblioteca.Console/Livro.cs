@@ -1,27 +1,32 @@
 public class Livro
 {
-    public string nome;
+    // propriedades
+    public string titulo;
     public string autor;
-    public string ISBN;
-    public int ano_publicacao;
-    public int num_paginas;
+    public string isbn;
+    public int anoPublicacao;
+    public int paginas;
 
-    public Livro(string tit, string aut, string isbn, int ano_pub, int num_pag)
+
+    // métodos
+    public Livro(string cod, string tit, string aut, int ano, int pag)
     {
-        nome = tit;
-        ISBN = isbn;
+        isbn = cod;
+        titulo = tit;
         autor = aut;
-        ano_publicacao = ano_pub;
-        num_paginas = num_pag;
+        anoPublicacao = ano;
+        paginas = pag;
     }
-    public void MostrarDados()
+
+
+    public void ImprimirDados()
     {
-        Console.WriteLine("Dados do Livro:");
-        Console.WriteLine($"Título    : {nome}");
-        Console.WriteLine($"ISBN      : {ISBN}");
-        Console.WriteLine($"Autor     : {autor}");
-        Console.WriteLine($"Ano de Pub: {ano_publicacao}");
-        Console.WriteLine($"Num de Pág: {num_paginas}");
+        Console.WriteLine("Dados do livro:");
+        Console.WriteLine($"ISBN        : {isbn}");
+        Console.WriteLine($"Título      : {titulo}");
+        Console.WriteLine($"Autor       : {autor}");
+        Console.WriteLine($"Ano de Pub. : {anoPublicacao}");
+        Console.WriteLine($"Num de pág. : {paginas}");
         Console.WriteLine("");
     }
 
