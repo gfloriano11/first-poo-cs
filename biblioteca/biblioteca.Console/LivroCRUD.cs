@@ -8,5 +8,11 @@ public class LivroCRUD
     {
         this.livros = new List<Livro>();
         this.livro = new Livro();
+        this.id = -1;
+    }
+
+    public void ExecutarCRUD()
+    {
+        
     }
 }
