@@ -13,6 +13,9 @@ public class LivroCRUD
 
     public void ExecutarCRUD()
     {
-        
+        Tela tela = new Tela(46, 9, 15, 10);
+
+        tela.PrepararTela("Cadastro de Livros");
+        Console.ReadKey();
     }
 }

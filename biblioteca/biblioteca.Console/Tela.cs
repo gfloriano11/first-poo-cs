@@ -18,6 +18,8 @@ public class Tela
     {
         this.largura = largura;
         this.altura = altura;
+        this.coluna = 0;
+        this.linha = 0;
     }
 
     public Tela(int largura, int altura, int coluna, int linha)
@@ -28,13 +30,13 @@ public class Tela
         this.linha = linha;
     }
 
-    public void PrepararTela()
+    public void PrepararTela(string titulo = "")
     {
         Console.BackgroundColor = ConsoleColor.Yellow;
         Console.ForegroundColor = ConsoleColor.Black;
-        Console.Clear();
-        this.MontarMoldura(0, 0, this.largura, this.altura);
-        this.Centralizar(0, this.largura, 1, "Sistema de Biblioteca do prof Paulo, que incrivel!");
+        // Console.Clear();
+        this.MontarMoldura(this.coluna, this.linha, this.largura, this.altura);
+        this.Centralizar(this.coluna, this.largura, this.linha+1, titulo);
     }
 
 
