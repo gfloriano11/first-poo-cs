@@ -35,8 +35,15 @@ public class Tela
         Console.BackgroundColor = ConsoleColor.Yellow;
         Console.ForegroundColor = ConsoleColor.Black;
         // Console.Clear();
-        this.MontarMoldura(this.coluna, this.linha, this.largura, this.altura);
-        this.Centralizar(this.coluna, this.largura, this.linha+1, titulo);
+        this.MontarMoldura(
+            this.coluna,
+            this.linha,
+            this.coluna + this.largura,
+            this.linha + this.altura
+        );
+
+        this.Centralizar(this.coluna, this.coluna+this.largura, this.linha + 1, titulo);
+        
     }
 
 
@@ -62,7 +69,7 @@ public class Tela
 
     public void Centralizar(int ci, int cf, int lin, string msg)
     {
-        int col = (cf - ci - msg.Length) / 2;
+        int col = (cf - ci - msg.Length) / 2 + ci;
         Console.SetCursorPosition(col, lin);
         Console.Write(msg);
     }
