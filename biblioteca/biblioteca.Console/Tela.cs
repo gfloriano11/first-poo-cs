@@ -8,6 +8,8 @@ public class Tela
     //
     private int largura;
     private int altura;
+    private int coluna;
+    private int linha;
 
     //
     // métodos
@@ -18,6 +20,13 @@ public class Tela
         this.altura = altura;
     }
 
+    public Tela(int largura, int altura, int coluna, int linha)
+    {
+        this.largura = largura;
+        this.altura = altura;
+        this.coluna = coluna;
+        this.linha = linha;
+    }
 
     public void PrepararTela()
     {
