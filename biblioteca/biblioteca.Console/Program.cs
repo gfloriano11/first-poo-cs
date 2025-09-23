@@ -21,7 +21,7 @@ while (true)
     if (opcao == "2")
     {
         livroCRUD.ExecutarCRUD();
-        break;
+        // break;
     }
     ;
 }

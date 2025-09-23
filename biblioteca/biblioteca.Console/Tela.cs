@@ -42,8 +42,8 @@ public class Tela
             this.linha + this.altura
         );
 
-        this.Centralizar(this.coluna, this.coluna+this.largura, this.linha + 1, titulo);
-        
+        this.Centralizar(this.coluna, this.coluna + this.largura, this.linha + 1, titulo);
+
     }
 
 
@@ -74,10 +74,24 @@ public class Tela
         Console.Write(msg);
     }
 
+    public void ApagarArea(int ci, int li, int cf, int lf)
+    {
+        for (int coluna = ci; coluna <= cf; coluna++)
+        {
+            for (int linha = li; linha <= lf; linha++)
+            {
+                Console.SetCursorPosition(coluna, linha);
+                Console.Write(" ");
+            }
+        }
+    }
+
 
     public void MontarMoldura(int ci, int li, int cf, int lf)
     {
         int col, lin;
+
+        this.ApagarArea(ci, li, cf, lf);
         // desenha as linhas horizontais
         for (col = ci; col < cf; col++)
         {
@@ -112,5 +126,29 @@ public class Tela
 
         Console.SetCursorPosition(cf, lf);
         Console.Write("╝");
+    }
+
+    public void MontarTela(List<string> dados, int col, int lin)
+    {
+        for (int i = 0; i < dados.Count; i++)
+        {
+            Console.SetCursorPosition(col, lin);
+            Console.WriteLine(dados[i]);
+            lin++;
+        }
+    }
+
+    public void MostrarMensagem(int col, int lin, string msg)
+    {
+        Console.SetCursorPosition(col, lin);
+        Console.WriteLine(msg);
+    }
+
+    public string Perguntar(int col, int lin, string pergunta)
+    {
+        string resp = "";
+        this.MostrarMensagem(col, lin, pergunta);
+        resp = Console.ReadLine();
+        return resp;
     }
 }

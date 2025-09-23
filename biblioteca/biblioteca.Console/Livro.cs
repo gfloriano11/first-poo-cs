@@ -27,6 +27,14 @@ public class Livro
         this.paginas = 0;
     }
 
+    public Livro(string isbn, string titulo, string autor, int anoPublicacao, int paginas)
+    {
+        this.isbn = isbn;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.anoPublicacao = anoPublicacao;
+        this.paginas = paginas;
+    }
 
     public void ImprimirDados()
     {
