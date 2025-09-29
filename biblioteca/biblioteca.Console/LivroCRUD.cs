@@ -2,33 +2,35 @@ public class LivroCRUD
 {
     private List<Livro> livros;
     private Livro livro;
-    private int id;
+    private int posicao;
     private List<string> dados = new List<string>();
     private int larguraDados;
     private int colunaDados;
     private int linhaDados;
+    private Tela tela;
 
     public LivroCRUD()
     {
         this.livros = new List<Livro>();
         this.livro = new Livro();
-        this.id = -1;
+        this.posicao = -1;
 
         dados.Add("ISBN     :");
         dados.Add("Título   :");
         dados.Add("Autor    :");
         dados.Add("Ano      :");
         dados.Add("Páginas  :");
+
+        this.tela = new Tela(46, 9, 15, 5);
     }
 
     public void ExecutarCRUD()
     {
         string resp;
-        Tela tela = new Tela(46, 9, 15, 5);
 
-        tela.PrepararTela("Cadastro de Livros");
+        this.tela.PrepararTela("Cadastro de Livros");
 
-        tela.MontarTela(dados, 16, 7);
+        this.tela.MontarTela(dados, 16, 7);
 
         this.larguraDados = 44 - dados[0].Length;
         this.colunaDados = 16 + dados[0].Length;
@@ -40,14 +42,14 @@ public class LivroCRUD
 
         if (!achou)
         {
-            tela.MostrarMensagem(this.colunaDados, this.linhaDados + 5, "Livro não encontrado.");
-            resp = tela.Perguntar(this.colunaDados, this.linhaDados + 6, "Deseja cadastrar esse livro? (S/N)");
+            this.tela.MostrarMensagem(this.colunaDados, this.linhaDados + 5, "Livro não encontrado.");
+            resp = this.tela.Perguntar(this.colunaDados, this.linhaDados + 6, "Deseja cadastrar esse livro? (S/N)");
             resp = resp.ToLower();
 
             if (resp == "s")
             {
                 this.EntrarDados(2);
-                resp = tela.Perguntar(this.colunaDados, this.linhaDados + 7, "Confirma cadastro? (S/N)");
+                resp = this.tela.Perguntar(this.colunaDados, this.linhaDados + 7, "Confirma cadastro? (S/N)");
                 resp = resp.ToLower();
 
                 if (resp == "s")
@@ -70,7 +72,7 @@ public class LivroCRUD
         }
         else
         {
-            Console.WriteLine("--- achei ---");
+            this.MostrarDados();
             Console.ReadKey();
         }
     }
@@ -108,11 +110,35 @@ public class LivroCRUD
             if (this.livro.isbn == this.livros[i].isbn)
             {
                 encontrei = true;
-                this.id = i;
+                this.posicao = i;
                 break;
             }
         }
 
         return encontrei;
+    }
+
+    public void MostrarDados()
+    {
+        this.tela.MostrarMensagem(
+            this.colunaDados,
+            this.linhaDados + 1,
+            this.livros[this.posicao].titulo
+        );
+        this.tela.MostrarMensagem(
+            this.colunaDados,
+            this.linhaDados + 2,
+            this.livros[this.posicao].autor
+        );
+        this.tela.MostrarMensagem(
+            this.colunaDados,
+            this.linhaDados + 3,
+            this.livros[this.posicao].anoPublicacao.ToString()
+        );
+        this.tela.MostrarMensagem(
+            this.colunaDados,
+            this.linhaDados + 4,
+            this.livros[this.posicao].paginas.ToString()
+        );
     }
 }
